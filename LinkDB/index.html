@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body onload="onLoad()">
+<script src="linkdb_front.js"></script>
+<form action="add_link">
+<p>Add Link:
+<input id="new_link" type="text" value="url goes here">
+<input id="nickname" type="text" value="nickname goes here">
+<input type="button" onclick="addLink()"></p>
+</form>
+<table id="link_table">
+<tr><td>Link</td><td>Nickname</td><td></td></tr>
+<tr>
+  <td><a id="link1" href ="http://google.com">google.com</a></td>
+  <td>Nickname</td>
+  <td><input type="button" value="Delete" onclick="delLink()"></td>
+</tr>
+</table>
+</body>
+</html>
